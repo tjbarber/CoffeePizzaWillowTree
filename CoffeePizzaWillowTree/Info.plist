@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2018 TJ Barber. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>CoffeePizzaWillowTreeView</string>
+	<string>CoffeePizzaWillowTree.SaverView</string>
 </dict>
 </plist>

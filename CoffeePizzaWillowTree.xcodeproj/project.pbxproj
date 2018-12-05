@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ACD3DBC421B849F000DF5F16 /* CoffeePizzaWillowTreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DBC321B849F000DF5F16 /* CoffeePizzaWillowTreeView.h */; };
-		ACD3DBC621B849F000DF5F16 /* CoffeePizzaWillowTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DBC521B849F000DF5F16 /* CoffeePizzaWillowTreeView.m */; };
+		ACD3DBCE21B84A1B00DF5F16 /* SaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DBCD21B84A1B00DF5F16 /* SaverView.swift */; };
+		ACD3DBD021B84AE900DF5F16 /* EmojiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DBCF21B84AE900DF5F16 /* EmojiLabel.swift */; };
+		ACD3DBD221B84FCD00DF5F16 /* wt_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = ACD3DBD121B84FCD00DF5F16 /* wt_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACD3DBC021B849F000DF5F16 /* CoffeePizzaWillowTree.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeePizzaWillowTree.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD3DBC321B849F000DF5F16 /* CoffeePizzaWillowTreeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeePizzaWillowTreeView.h; sourceTree = "<group>"; };
-		ACD3DBC521B849F000DF5F16 /* CoffeePizzaWillowTreeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeePizzaWillowTreeView.m; sourceTree = "<group>"; };
 		ACD3DBC721B849F000DF5F16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD3DBCD21B84A1B00DF5F16 /* SaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaverView.swift; sourceTree = "<group>"; };
+		ACD3DBCF21B84AE900DF5F16 /* EmojiLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiLabel.swift; sourceTree = "<group>"; };
+		ACD3DBD121B84FCD00DF5F16 /* wt_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wt_logo.png; path = ../../../Downloads/wt_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +50,10 @@
 		ACD3DBC221B849F000DF5F16 /* CoffeePizzaWillowTree */ = {
 			isa = PBXGroup;
 			children = (
-				ACD3DBC321B849F000DF5F16 /* CoffeePizzaWillowTreeView.h */,
-				ACD3DBC521B849F000DF5F16 /* CoffeePizzaWillowTreeView.m */,
+				ACD3DBD121B84FCD00DF5F16 /* wt_logo.png */,
 				ACD3DBC721B849F000DF5F16 /* Info.plist */,
+				ACD3DBCD21B84A1B00DF5F16 /* SaverView.swift */,
+				ACD3DBCF21B84AE900DF5F16 /* EmojiLabel.swift */,
 			);
 			path = CoffeePizzaWillowTree;
 			sourceTree = "<group>";
@@ -62,7 +65,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD3DBC421B849F000DF5F16 /* CoffeePizzaWillowTreeView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,11 +95,15 @@
 		ACD3DBB721B849F000DF5F16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "TJ Barber";
 				TargetAttributes = {
 					ACD3DBBF21B849F000DF5F16 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -123,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD3DBD221B84FCD00DF5F16 /* wt_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD3DBC621B849F000DF5F16 /* CoffeePizzaWillowTreeView.m in Sources */,
+				ACD3DBCE21B84A1B00DF5F16 /* SaverView.swift in Sources */,
+				ACD3DBD021B84AE900DF5F16 /* EmojiLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +262,22 @@
 		ACD3DBCB21B849F000DF5F16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 42DJD2F3FM;
 				INFOPLIST_FILE = CoffeePizzaWillowTree/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WillowTree.CoffeePizzaWillowTree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -268,13 +285,21 @@
 		ACD3DBCC21B849F000DF5F16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 42DJD2F3FM;
 				INFOPLIST_FILE = CoffeePizzaWillowTree/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WillowTree.CoffeePizzaWillowTree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
